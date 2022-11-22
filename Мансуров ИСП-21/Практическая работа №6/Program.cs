@@ -5,11 +5,12 @@
 int num = 100;
 int count = 0;
 
-while (counter < 15)
+while (count < 15)
 {
-    number++;
-    if (number % 19 == 0)
+    if (num % 19 == 0)
     {
-        Console.WriteLine("{0}: {1}", count, num);
+        Console.WriteLine("{0}", num);
+        count++;
     }
+    num++;
 }
