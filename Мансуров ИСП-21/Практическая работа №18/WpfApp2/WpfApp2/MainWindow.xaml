@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Практическая работа №18" Height="450" Width="800">
+    <Grid Margin="5,5,5,-11">
+        <GroupBox Header="Название месяца" Margin="10,10,561,187">
+            <Grid Height="351">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="jan" Content="Январь" Margin="0,0,122,0" Grid.ColumnSpan="2" Checked="january"/>
+                <RadioButton x:Name="feb" Content="Февраль" Margin="0,18,122,-18" Grid.ColumnSpan="2" Checked="february">
+                <RadioButton x:Name="mar" Content="Март" Margin="0,36,122,-36" Grid.ColumnSpan="2" Checked="marth"/>
+                <RadioButton x:Name="apr" Content="Апрель" Margin="0,54,122,-54" Grid.ColumnSpan="2" Checked="april"/>
+                <RadioButton x:Name="may" Content="Май" Margin="0,72,122,-72" Grid.ColumnSpan="2" Checked="may"/>
+                <RadioButton x:Name="jun" Content="Июнь" Margin="0,90,122,-90" Grid.ColumnSpan="2" Checked="juny"/>
+                <RadioButton x:Name="jul" Content="Июль" Margin="0,108,122,-108" Grid.ColumnSpan="2" Checked="july"/>
+                <RadioButton x:Name="aug" Content="Август" Margin="0,126,122,-126" Grid.ColumnSpan="2" Checked="august"/>
+                <RadioButton x:Name="sep" Content="Сентябрь" Margin="0,144,122,-144" Grid.ColumnSpan="2" Checked="september"/>
+                <RadioButton x:Name="oct" Content="Октябрь" Margin="0,162,122,-162" Grid.ColumnSpan="2" Checked="october"/>
+                <RadioButton x:Name="nov" Content="Ноябрь" Margin="0,180,122,-180" Grid.ColumnSpan="2" Checked="november"/>
+                <RadioButton x:Name="dec" Content="Декабрь" Margin="0,198,122,-198" Grid.ColumnSpan="2" Checked="december"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="firstQ" Header="Ручной расчет" Margin="249,10,324,275">
+            <Grid Height="208">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox x:Name="statusCB1" Content="Вкл\выкл" HorizontalAlignment="Left" Margin="10,0,0,0" Click="firstCheckBox">
+
+                </CheckBox>
+                <TextBox x:Name="firstText" TextWrapping="Wrap" Text="Порядковый номер: {0}. Время года: {0}" Margin="10,18,49,121" Grid.ColumnSpan="2"/>
+                <Button x:Name="buttonUse" Content="Расчет" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Height="18" Width="146" Click="buttonClicked" RenderTransformOrigin="-1.149,1.519" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="secondQ" Header="Автоматический расчет" Margin="249,185,324,145">
+            <Grid Height="202">
+                <CheckBox x:Name="statusCB2" Content="Вкл/выкл" HorizontalAlignment="Left" Margin="10,0,0,0" Click="secondCheckBox"/>
+                <TextBox x:Name="secondText" TextWrapping="Wrap" Text="Порядковый номер: {0}. Время года: {0}" Margin="10,18,45,121"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
