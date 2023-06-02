@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="Counter Strike Global Defence Sniper FPS Action 2D Shooter ( Free )" Height="450" Width="800"
+        KeyDown="Window_KeyDown">
+    
+    <Grid>
+        <Canvas>
+            <Image Source="resources/background.jpg" Stretch="Fill" Height="434" Width="800"/>
+            <Menu>
+                <MenuItem Header="Start Game" Click="start_Game"/>
+            </Menu>
+            <TextBlock x:Name="stats_tab" Canvas.Left="320" TextWrapping="Wrap" Text="Kills: 0" Canvas.Top="400" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden"/>
+            <Image x:Name="logo_head" Height="68" Canvas.Left="-32" Source="/resources/done/headshot.png" Stretch="Fill" Canvas.Top="10" Width="136" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image x:Name="awp" Height="183" Canvas.Left="490" Source="/resources/done/awp.png" Stretch="Fill" Canvas.Top="251" Width="400" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden" />
+            <Image x:Name="enemy_1" Height="93" Canvas.Left="506" Source="/resources/done/ter1.png" Stretch="Fill" Canvas.Top="251" Width="85" Visibility="Hidden"/>
+            <Image x:Name="friend" Height="147" Canvas.Left="53" Source="/resources/done/ct.png" Stretch="Fill" Canvas.Top="187" Width="135" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.289,1.57" Visibility="Hidden"/>
+            <Image x:Name="enemy_2" Height="104" Canvas.Left="261" Source="/resources/done/ter2.png" Stretch="Fill" Canvas.Top="217" Width="108" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden"/>
+            <Image x:Name="fire_particle" Height="130" Canvas.Left="543" Source="/resources/done/fire_part.png" Stretch="Fill" Canvas.Top="209" Width="75" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="220.903"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="blood_particle" Height="70" Canvas.Left="270" Source="/resources/done/blood_part.png" Stretch="Fill" Canvas.Top="234" Width="73" Visibility="Hidden"/>
+            <Image x:Name="kill_enemy" Height="22" Canvas.Left="619" Source="/resources/done/killchat.png" Stretch="Fill" Canvas.Top="9" Width="171" Visibility="Hidden"/>
+            <Image x:Name="kill_friend" Height="24" Canvas.Left="591" Source="/resources/done/killchat_1.png" Stretch="Fill" Canvas.Top="44" Width="199" Visibility="Hidden"/>
+            <Image x:Name="steam_logo" Height="28" Source="/resources/done/steam.png" Stretch="Fill" Canvas.Top="406" Width="33" RenderTransformOrigin="-17.424,-7.463"/>
+            <Image x:Name="gabe_logo" Height="62" Canvas.Left="411" Source="/resources/done/gaben.jpg" Stretch="Fill" Canvas.Top="217" Width="41" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="2.692"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="crosshair" Height="19" Canvas.Left="386" Source="/resources/done/crosshair.png" Stretch="Fill" Canvas.Top="208" Width="28" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden"/>
+            <Image x:Name="ct_win_logo" Height="68" Canvas.Left="158" Source="/resources/done/ct_win.png" Stretch="Fill" Canvas.Top="74" Width="484" Visibility="Hidden"/>
+            <Image x:Name="tt_win_logo" Height="68" Canvas.Left="158" Source="/resources/done/tt_win.jpg" Stretch="Fill" Canvas.Top="74" Width="484" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden"/>
+        </Canvas>
+    </Grid>
+</Window>

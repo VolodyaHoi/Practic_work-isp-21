@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="Практическая работа" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Меню">
+                <MenuItem Header="Сохранить" Click="btn_Save"/>
+                <MenuItem Header="Открыть" Click="btn_Open"/>
+            </MenuItem>
+        </Menu>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="200,10,10,10"/>
+        <TextBox x:Name="tbM" HorizontalAlignment="Left" Margin="51,158,0,0" TextWrapping="Wrap" Text="Кол-во строк" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbN" HorizontalAlignment="Left" Margin="51,199,0,0" TextWrapping="Wrap" Text="Кол-во столбцов" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbRez" HorizontalAlignment="Left" Margin="51,242,0,0" TextWrapping="Wrap" Text="Результат" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Создать" HorizontalAlignment="Left" Margin="24,284,0,0" VerticalAlignment="Top" Click="miCreate_Click"/>
+        <Button Content="Заполнить" HorizontalAlignment="Left" Margin="97,284,0,0" VerticalAlignment="Top" Click="miFill_Click"/>
+        <Button Content="Очистить" HorizontalAlignment="Left" Margin="24,318,0,0" VerticalAlignment="Top" Click="miCreate_Click"/>
+        <Button Content="Рассчет" HorizontalAlignment="Left" Margin="111,318,0,0" VerticalAlignment="Top" Click="miCalc_Click" RenderTransformOrigin="-0.383,0.333"/>
+
+
+    </Grid>
+</Window>
