@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Практическая работа №20" Height="450" Width="800" Icon="/gens.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="92*"/>
+            <ColumnDefinition Width="561*"/>
+            <ColumnDefinition Width="147*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="15*"/>
+            </Grid.ColumnDefinitions>
+            <Menu VerticalAlignment="Top" Grid.ColumnSpan="2">
+                <MenuItem Header="Управление">
+                    <MenuItem Header="Запустить" ToolTip="Запустить алгоритм программы" Click="startAlg"/>
+                </MenuItem>
+            </Menu>
+            <TextBox x:Name="getKValue" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Text="Введите число K:" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+            <GroupBox Header="Результаты" Margin="10,75,196,157" ToolTip="Результаты" Grid.ColumnSpan="2">
+                <Grid Height="163" Margin="10,0,234,0">
+                    <ListBox x:Name="numbers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,104,0"/>
+                    <TextBox x:Name="result" Margin="226,0,-226,0" Text="Сумма: {0}. Количество сгененрированных чисел: {0}"></TextBox>
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+
+    </Grid>
+</Window>
