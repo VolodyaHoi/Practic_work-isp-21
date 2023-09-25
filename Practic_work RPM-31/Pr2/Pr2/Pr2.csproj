@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LibMas">
+      <HintPath>..\LibMas\bin\Debug\LibMas.dll</HintPath>
+    </Reference>
+    <Reference Include="Lib_9">
+      <HintPath>..\Lib_9\bin\Debug\Lib_9.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />

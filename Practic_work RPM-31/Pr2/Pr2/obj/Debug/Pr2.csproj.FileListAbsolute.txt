@@ -30,3 +30,8 @@ C:\Users\исп-31\Desktop\Pr2\Pr2\obj\Debug\Pr2.csproj.GenerateResource.cache
 C:\Users\исп-31\Desktop\Pr2\Pr2\obj\Debug\Pr2.csproj.CoreCompileInputs.cache
 C:\Users\исп-31\Desktop\Pr2\Pr2\obj\Debug\Pr2.exe
 C:\Users\исп-31\Desktop\Pr2\Pr2\obj\Debug\Pr2.pdb
+C:\Users\исп-31\Desktop\Pr2\Pr2\bin\Debug\LibMas.dll
+C:\Users\исп-31\Desktop\Pr2\Pr2\bin\Debug\Lib_9.dll
+C:\Users\исп-31\Desktop\Pr2\Pr2\bin\Debug\LibMas.pdb
+C:\Users\исп-31\Desktop\Pr2\Pr2\bin\Debug\Lib_9.pdb
+C:\Users\исп-31\Desktop\Pr2\Pr2\obj\Debug\Pr2.csproj.CopyComplete

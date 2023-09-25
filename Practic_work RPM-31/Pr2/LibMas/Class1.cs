@@ -23,12 +23,15 @@ namespace LibMas
 
         public static void masOpen(String file, out int[] array2)
         {
-            string[] values = File.ReadAllText(file).Split(' ');
-            int[] array = new int[values.Length - 1];
-
-            for (int i = 0; i < values.Length - 1; i++)
+            String line;
+            int value;
+            StreamReader reader = new StreamReader(file);
+            line = reader.ReadLine();
+            int[] array = new int[Convert.ToInt32(line)];
+            for (int i = 0; i < Convert.ToInt32(line); i++)
             {
-                array[i] = Convert.ToInt32(values[i]);
+                value = Convert.ToInt32(reader.ReadLine());
+                array[i] = value;
             }
             array2 = array;
 
@@ -37,12 +40,12 @@ namespace LibMas
         public static void masSave(String file, int[] array)
         {
             StreamWriter writer = new StreamWriter(file);
-            
-            for(int i = 0; i < array.Length; ++i)
+            writer.WriteLine(array.Length);
+            for (int i = 0; i < array.Length; i++)
             {
-                writer.Write(array[i]);
+                writer.WriteLine(array[i]);
             }
-            
+            writer.Close();
         }
     }
 }
