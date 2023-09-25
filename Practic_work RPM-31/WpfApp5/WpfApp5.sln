@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp5", "WpfApp5\WpfApp5.csproj", "{5003A893-96FD-4E93-8408-EEB03CC9ABFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibMas", "LibMas\LibMas.csproj", "{914989FE-7BB6-4337-B3D4-4B9EE3563DBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_9", "Lib_9\Lib_9.csproj", "{0B87C1FA-72EC-4E1B-A13E-22C9EBA39B18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5003A893-96FD-4E93-8408-EEB03CC9ABFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5003A893-96FD-4E93-8408-EEB03CC9ABFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5003A893-96FD-4E93-8408-EEB03CC9ABFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5003A893-96FD-4E93-8408-EEB03CC9ABFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914989FE-7BB6-4337-B3D4-4B9EE3563DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914989FE-7BB6-4337-B3D4-4B9EE3563DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914989FE-7BB6-4337-B3D4-4B9EE3563DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914989FE-7BB6-4337-B3D4-4B9EE3563DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B87C1FA-72EC-4E1B-A13E-22C9EBA39B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B87C1FA-72EC-4E1B-A13E-22C9EBA39B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B87C1FA-72EC-4E1B-A13E-22C9EBA39B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B87C1FA-72EC-4E1B-A13E-22C9EBA39B18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20E42B9F-2246-4A96-B36C-47040535FB26}
+	EndGlobalSection
+EndGlobal

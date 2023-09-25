@@ -1,0 +1,6 @@
+C:\Users\ИСП-31\source\repos\WpfApp5\LibMas\bin\Debug\LibMas.dll
+C:\Users\ИСП-31\source\repos\WpfApp5\LibMas\bin\Debug\LibMas.pdb
+C:\Users\ИСП-31\source\repos\WpfApp5\LibMas\obj\Debug\LibMas.csproj.AssemblyReference.cache
+C:\Users\ИСП-31\source\repos\WpfApp5\LibMas\obj\Debug\LibMas.csproj.CoreCompileInputs.cache
+C:\Users\ИСП-31\source\repos\WpfApp5\LibMas\obj\Debug\LibMas.dll
+C:\Users\ИСП-31\source\repos\WpfApp5\LibMas\obj\Debug\LibMas.pdb
