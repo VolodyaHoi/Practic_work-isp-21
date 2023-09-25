@@ -1,0 +1,6 @@
+C:\Users\исп-31\Desktop\Pr2\Lib_9\bin\Debug\Lib_9.dll
+C:\Users\исп-31\Desktop\Pr2\Lib_9\bin\Debug\Lib_9.pdb
+C:\Users\исп-31\Desktop\Pr2\Lib_9\obj\Debug\Lib_9.csproj.AssemblyReference.cache
+C:\Users\исп-31\Desktop\Pr2\Lib_9\obj\Debug\Lib_9.csproj.CoreCompileInputs.cache
+C:\Users\исп-31\Desktop\Pr2\Lib_9\obj\Debug\Lib_9.dll
+C:\Users\исп-31\Desktop\Pr2\Lib_9\obj\Debug\Lib_9.pdb

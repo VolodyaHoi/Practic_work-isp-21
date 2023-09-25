@@ -24,5 +24,65 @@ namespace Pr2
         {
             InitializeComponent();
         }
+
+        private void btn_Generate(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Open(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Save(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Clear(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Prod(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_AllClear(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Exit(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Info(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void click_Clear(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void click_Clear2(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void click_Clear3(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void btn_Add(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

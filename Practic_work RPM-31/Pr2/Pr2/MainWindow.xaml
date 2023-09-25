@@ -10,29 +10,30 @@
         <Menu>
             <MenuItem Header="Управление">
                 <MenuItem Header="Массив">
-                    <MenuItem Header="Сгенерировать"/>
-                    <MenuItem Header="Открыть"/>
-                    <MenuItem Header="Сохранить"/>
-                    <MenuItem Header="О программе"/>
+                    <MenuItem Header="Сгенерировать" Click="btn_Generate"/>
+                    <MenuItem Header="Открыть" Click="btn_Open"/>
+                    <MenuItem Header="Сохранить" Click="btn_Save"/>
+                    <MenuItem Header="Очистить" Click="btn_Clear"/>
                 </MenuItem>
-                <MenuItem Header="Найти произведение"/>
-                <MenuItem Header="Очистить всё"/>
+                <MenuItem Header="Найти произведение" Click="btn_Prod"/>
+                <MenuItem Header="Очистить всё" Click="btn_AllClear"/>
             </MenuItem>
-            <MenuItem Header="Выход"/>
-            <MenuItem Header="О программе"/>
+            <MenuItem Header="Выход" Click="btn_Exit"/>
+            <MenuItem Header="О программе" Click="btn_Info"/>
         </Menu>
         <GroupBox Header="Массив" Margin="10,39,522,29">
             <Grid>
-                <ListBox Margin="0,0,0,171"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="139" Height="36"/>
+                <ListBox x:Name="lb_Mas" Margin="0,0,0,171"/>
+                <TextBox x:Name="tb_Mas" HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" Text="Введите кол-во элементов" VerticalAlignment="Top" Width="139" Height="36" MouseDoubleClick="click_Clear"/>
 
             </Grid>
         </GroupBox>
         <GroupBox Header="Задача" Margin="426,39,106,29">
             <Grid>
-                <ListBox Margin="0,0,0,171"/>
-                <TextBox HorizontalAlignment="Left" Margin="10,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="147" Height="33"/>
-                <Button Content="Button" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top" Width="85"/>
+                <ListBox x:Name="lb_Quest" Margin="0,0,0,171"/>
+                <TextBox x:Name="tb_QuestAdd" HorizontalAlignment="Left" Margin="10,196,0,0" TextWrapping="Wrap" Text="Введите число" VerticalAlignment="Top" Width="147" Height="33" MouseDoubleClick="click_Clear2"/>
+                <TextBox x:Name="tb_QuestProd" HorizontalAlignment="Left" Margin="10,234,0,0" TextWrapping="Wrap" Text="Произведение: X" VerticalAlignment="Top" Width="147" Height="33" MouseDoubleClick="click_Clear3"/>
+                <Button Content="Добавить" HorizontalAlignment="Left" Margin="162,196,0,0" VerticalAlignment="Top" Width="85" Click="btn_Add"/>
 
             </Grid>
         </GroupBox>
