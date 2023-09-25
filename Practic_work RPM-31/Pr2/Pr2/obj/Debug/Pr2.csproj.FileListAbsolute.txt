@@ -1,0 +1,16 @@
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\bin\Debug\Pr2.exe.config
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\bin\Debug\Pr2.exe
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\bin\Debug\Pr2.pdb
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.csproj.AssemblyReference.cache
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.csproj.SuggestedBindingRedirects.cache
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\MainWindow.g.cs
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\App.g.cs
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2_MarkupCompile.cache
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2_MarkupCompile.lref
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\MainWindow.baml
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.g.resources
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.Properties.Resources.resources
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.csproj.GenerateResource.cache
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.csproj.CoreCompileInputs.cache
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.exe
+C:\Users\ИСП-31\source\repos\Pr2\Pr2\obj\Debug\Pr2.pdb
