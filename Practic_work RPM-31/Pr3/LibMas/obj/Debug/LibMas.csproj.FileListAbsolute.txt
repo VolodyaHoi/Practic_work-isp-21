@@ -1,0 +1,18 @@
+C:\Users\исп-31\Desktop\Pr2\LibMas\bin\Debug\LibMas.dll
+C:\Users\исп-31\Desktop\Pr2\LibMas\bin\Debug\LibMas.pdb
+C:\Users\исп-31\Desktop\Pr2\LibMas\obj\Debug\LibMas.csproj.AssemblyReference.cache
+C:\Users\исп-31\Desktop\Pr2\LibMas\obj\Debug\LibMas.csproj.CoreCompileInputs.cache
+C:\Users\исп-31\Desktop\Pr2\LibMas\obj\Debug\LibMas.dll
+C:\Users\исп-31\Desktop\Pr2\LibMas\obj\Debug\LibMas.pdb
+C:\Users\ИСП-31\Desktop\Мансуров пр2\LibMas\bin\Debug\LibMas.dll
+C:\Users\ИСП-31\Desktop\Мансуров пр2\LibMas\bin\Debug\LibMas.pdb
+C:\Users\ИСП-31\Desktop\Мансуров пр2\LibMas\obj\Debug\LibMas.csproj.AssemblyReference.cache
+C:\Users\ИСП-31\Desktop\Мансуров пр2\LibMas\obj\Debug\LibMas.csproj.CoreCompileInputs.cache
+C:\Users\ИСП-31\Desktop\Мансуров пр2\LibMas\obj\Debug\LibMas.dll
+C:\Users\ИСП-31\Desktop\Мансуров пр2\LibMas\obj\Debug\LibMas.pdb
+C:\Users\ИСП-31\Desktop\МансуровUp\LibMas\bin\Debug\LibMas.dll
+C:\Users\ИСП-31\Desktop\МансуровUp\LibMas\bin\Debug\LibMas.pdb
+C:\Users\ИСП-31\Desktop\МансуровUp\LibMas\obj\Debug\LibMas.csproj.AssemblyReference.cache
+C:\Users\ИСП-31\Desktop\МансуровUp\LibMas\obj\Debug\LibMas.csproj.CoreCompileInputs.cache
+C:\Users\ИСП-31\Desktop\МансуровUp\LibMas\obj\Debug\LibMas.dll
+C:\Users\ИСП-31\Desktop\МансуровUp\LibMas\obj\Debug\LibMas.pdb
