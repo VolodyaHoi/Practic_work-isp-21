@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LibMas;
 using Lib_9;
+using Microsoft.Win32;
 
 namespace Pr2
 {
@@ -22,6 +23,7 @@ namespace Pr2
     /// </summary>
     public partial class MainWindow : Window
     {
+        int[,] mas;
         public MainWindow()
         {
             InitializeComponent();
@@ -29,14 +31,15 @@ namespace Pr2
 
         private void btn_Generate(object sender, RoutedEventArgs e)
         {
-            int n;
-            int[] matrix;
-            bool isNum = int.TryParse(tb_M.Text, out n);
+            int m, n;
+            int[,] matrix;
+            bool isNum = int.TryParse(tb_M.Text, out m);
             bool isNum2 = int.TryParse(tb_N.Text, out n);
-            if (isNum && isNum)
+            if (isNum && isNum2)
             {
-                LibMas.libmas.masGenerate(n, out matrix);
-                //вывод в дата грид
+                LibMas.libmas.masGenerate(m, n, out matrix);
+                mas = matrix;
+                dg_Matrix.ItemsSource = VisualArray.ToDataTable(matrix).DefaultView;
             } else { MessageBox.Show("Кол-во строк или столбцов не корректны!"); }
 
         }
@@ -44,18 +47,17 @@ namespace Pr2
         private void btn_Open(object sender, RoutedEventArgs e)
         {
             String filename = "matrix.txt";
-            LibMas.libmas.masOpen(filename, out int[] matrix);
+            LibMas.libmas.masOpen(filename, out int[,] matrix);
             //вывод в дата грид
         }
 
         private void btn_Save(object sender, RoutedEventArgs e)
         {
             String filename = "matrix.txt";
-            int m = Convert.ToInt32(tb_M.Text);
-            int n = Convert.ToInt32(tb_N.Text);
-            int[,] matrix = new int[m, n];
+
+            LibMas.libmas.masSave(filename, mas);
+            
             //создание матрицы из дата грид
-            LibMas.libmas.masSave(filename, matrix);
         }
 
         private void btn_Clear(object sender, RoutedEventArgs e)

@@ -16,3 +16,9 @@ C:\Users\ИСП-31\Desktop\МансуровUp\Lib_9\obj\Debug\Lib_9.csproj.Assem
 C:\Users\ИСП-31\Desktop\МансуровUp\Lib_9\obj\Debug\Lib_9.csproj.CoreCompileInputs.cache
 C:\Users\ИСП-31\Desktop\МансуровUp\Lib_9\obj\Debug\Lib_9.dll
 C:\Users\ИСП-31\Desktop\МансуровUp\Lib_9\obj\Debug\Lib_9.pdb
+C:\Users\ИСП-31\Desktop\Pr3\Lib_9\obj\Debug\Lib_9.csproj.AssemblyReference.cache
+C:\Users\ИСП-31\Desktop\Pr3\Lib_9\obj\Debug\Lib_9.csproj.CoreCompileInputs.cache
+C:\Users\ИСП-31\Desktop\Pr3\Lib_9\obj\Debug\Lib_9.dll
+C:\Users\ИСП-31\Desktop\Pr3\Lib_9\obj\Debug\Lib_9.pdb
+C:\Users\ИСП-31\Desktop\Pr3\Lib_9\bin\Debug\Lib_9.dll
+C:\Users\ИСП-31\Desktop\Pr3\Lib_9\bin\Debug\Lib_9.pdb

@@ -11,8 +11,9 @@ namespace Lib_9
         public static void production(int[] array, out int product)
         {
             // функция
-            array = 1;
-            product = 0;
+            int s = 0;
+            array[0] = s;
+            product = 1;
         }
     }
 }

@@ -5,37 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Data;
+using System.Windows;
 
 namespace LibMas
 {
-    static class VisualArray
-    {
-        //Метод для двухмерного массива
-        public static DataTable ToDataTable<T>(this T[,] matrix)
-        {
-            var res = new DataTable();
-            for (int i = 0; i < matrix.GetLength(1); i++)
-            {
-                res.Columns.Add("col" + (i + 1), typeof(T));
-            }
-
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                var row = res.NewRow();
-
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    row[j] = matrix[i, j];
-                }
-
-                res.Rows.Add(row);
-            }
-
-            return res;
-        }
-
-
-    }
     public class libmas
     {
         /// <summary>
@@ -43,14 +16,18 @@ namespace LibMas
         /// </summary>
         /// <param name="size"></param>
         /// <param name="array2"></param>
-        public static void masGenerate(int size, out int[] array2)
+
+        public static void masGenerate(int m, int n, out int[,] array2)
         {
-            int[] array = new int[size];
+            int[,] array = new int[m, n];
             Random rnd = new Random();
 
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                array[i] = rnd.Next(1, 20);
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = rnd.Next(1, 20);
+                }
             }
             array2 = array;
         }
@@ -60,19 +37,26 @@ namespace LibMas
         /// </summary>
         /// <param name="file"></param>
         /// <param name="array2"></param>
-        public static void masOpen(String file, out int[] array2)
+        public static void masOpen(String file, out int[,] array2)
         {
-            String line;
-            int value;
-            StreamReader reader = new StreamReader(file);
-            line = reader.ReadLine();
-            int[] array = new int[Convert.ToInt32(line)];
-            for (int i = 0; i < Convert.ToInt32(line); i++)
+            StreamReader fileObj = new StreamReader(file);
+
+            int len0 = Convert.ToInt32(fileObj.ReadLine());
+            int len1 = Convert.ToInt32(fileObj.ReadLine());
+
+            int[,] mas = new Int32[len0, len1];
+
+
+            for (int i = 0; i < mas.GetLength(0); i++)
             {
-                value = Convert.ToInt32(reader.ReadLine());
-                array[i] = value;
+                for (int j = 0; j < mas.GetLength(1); j++)
+                {
+                    mas[i, j] = Convert.ToInt32(fileObj.ReadLine());
+                }
             }
-            array2 = array;
+            fileObj.Close();
+            array2 = mas;
+
 
         }
 
@@ -83,14 +67,23 @@ namespace LibMas
         /// <param name="array"></param>
         public static void masSave(String file, int[,] array)
         {
-            int j = 0;
-            StreamWriter writer = new StreamWriter(file);
-            writer.WriteLine(array.Length);
-            for (int i = 0; i < array.Length; i++)
+            StreamWriter fileObj = new StreamWriter(file);
+
+            fileObj.WriteLine(array.GetLength(0));
+            fileObj.WriteLine(array.GetLength(1));
+
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                writer.WriteLine(array[i, j]);
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    fileObj.WriteLine(array[i, j]);
+
+                }
+
+                
+
             }
-            writer.Close();
+            fileObj.Close();
         }
     }
 }

@@ -24,8 +24,8 @@
         <GroupBox Header="Матрица" Margin="10,39,10,29">
             <Grid>
                 <TextBox x:Name="tb_M" HorizontalAlignment="Left" Margin="10,234,0,0" TextWrapping="Wrap" Text="Введите кол-во строк" VerticalAlignment="Top" Width="139" Height="36" MouseDoubleClick="click_Clear"/>
-                <TextBox x:Name="tb_N" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="Введите кол-во столбцов" VerticalAlignment="Top" Width="139" Height="36" MouseDoubleClick="click_Clear"/>
-                <DataGrid x:Name="dg_Matrix" Margin="0,0,0,127"/>
+                <TextBox x:Name="tb_N" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" Text="Введите кол-во столбцов" VerticalAlignment="Top" Width="139" Height="36" MouseDoubleClick="click_Clear2"/>
+                <DataGrid x:Name="dg_Matrix" Margin="0,0,0,127" IsEnabled="False"/>
             </Grid>
         </GroupBox>
 
