@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="Практическая работа №6" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Управление">
+                <MenuItem Header="test" Click="test"/>
+                <MenuItem Header="Сгенерировать тройки" Click="menu_Generate"/>
+                <Separator/>
+                <MenuItem Header="Полное сравнение пар">
+                    <MenuItem Header="Первая и вторая тройка" Click="menu_EqualTwoNumA"/>
+                    <MenuItem Header="Первая и третья тройка" Click="menu_EqualTwoNumB"/>
+                    <MenuItem Header="Вторая и третья тройка" Click="menu_EqualTwoNumC"/>
+                    
+                </MenuItem>
+                <MenuItem Header="Сравнить три тройки [перегруз]" Click="menu_EqualThreeNum"/>
+                <Separator/>
+                <MenuItem Header="Проверка на четность">
+                    <MenuItem Header="Первая тройка" Click="menu_twoNotTwoA"/>
+                    <MenuItem Header="Вторая тройка" Click="menu_twoNotTwoB"/>
+                    <MenuItem Header="Третья тройка" Click="menu_twoNotTwoC"/>
+
+                </MenuItem>
+
+            </MenuItem>
+            <MenuItem Header="Выход" Click="btn_Exit"/>
+            <MenuItem Header="О программе" Click="btn_Info"/>
+        </Menu>
+        <GroupBox Header="Первая тройка" Margin="10,32,582,99">
+            <Grid>
+                <ListBox x:Name="A" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Вторая тройка" Margin="287,32,287,99">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <ListBox x:Name="B" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Третья тройка" Margin="571,32,21,99">
+            <Grid>
+                <ListBox x:Name="C" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            </Grid>
+        </GroupBox>
+
+
+
+    </Grid>
+</Window>
