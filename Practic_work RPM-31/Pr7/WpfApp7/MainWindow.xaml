@@ -1,0 +1,75 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="Практическая работа №7" Height="450" Width="800">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Управление">
+                <MenuItem Header="Проверка сравнения" Click="test"/>
+                <MenuItem Header="Сгенерировать тройки" Click="menu_Generate"/>
+                <Separator/>
+                <MenuItem Header="Полное сравнение пар">
+                    <MenuItem Header="Первая и вторая тройка" Click="menu_EqualTwoNumA"/>
+                    <MenuItem Header="Первая и третья тройка" Click="menu_EqualTwoNumB"/>
+                    <MenuItem Header="Вторая и третья тройка" Click="menu_EqualTwoNumC"/>
+
+                </MenuItem>
+                <MenuItem Header="Сравнить три тройки [перегруз]" Click="menu_EqualThreeNum"/>
+                <Separator/>
+                <MenuItem Header="Проверка на четность">
+                    <MenuItem Header="Первая тройка" Click="menu_twoNotTwoA"/>
+                    <MenuItem Header="Вторая тройка" Click="menu_twoNotTwoB"/>
+                    <MenuItem Header="Третья тройка" Click="menu_twoNotTwoC"/>
+
+                </MenuItem>
+                <MenuItem Header="Сравнить время" Click="startTime"/>
+
+            </MenuItem>
+            <MenuItem Header="Выход" Click="btn_Exit"/>
+            <MenuItem Header="О программе" Click="btn_Info"/>
+        </Menu>
+        <GroupBox Header="Первая тройка" Margin="21,32,571,174">
+            <Grid Height="239">
+                <ListBox x:Name="A" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,33"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Вторая тройка" Margin="287,32,287,174">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <ListBox x:Name="B" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="2" Height="209" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Третья тройка" Margin="571,32,21,174">
+            <Grid Height="283">
+                <ListBox x:Name="C" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,79"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Время" Margin="21,283,400,23">
+            <Grid Margin="0,0,115,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="39*"/>
+                    <ColumnDefinition Width="328*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="fH" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Час" VerticalAlignment="Top" Width="62"/>
+                <TextBox x:Name="fM" Grid.Column="1" HorizontalAlignment="Left" Margin="59,10,0,0" TextWrapping="Wrap" Text="Минута" VerticalAlignment="Top" Width="58"/>
+                <TextBox x:Name="fS" Grid.Column="1" HorizontalAlignment="Left" Margin="145,10,0,0" TextWrapping="Wrap" Text="Секунда" VerticalAlignment="Top" Width="66"/>
+                <TextBox x:Name="sH" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" Text="Час" VerticalAlignment="Top" Width="62"/>
+                <TextBox x:Name="sM" Grid.Column="1" HorizontalAlignment="Left" Margin="59,41,0,0" TextWrapping="Wrap" Text="Минута" VerticalAlignment="Top" Width="58"/>
+                <TextBox x:Name="sS" Grid.Column="1" HorizontalAlignment="Left" Margin="145,41,0,0" TextWrapping="Wrap" Text="Секунда" VerticalAlignment="Top" Width="66"/>
+
+            </Grid>
+        </GroupBox>
+
+
+
+    </Grid>
+</Window>
